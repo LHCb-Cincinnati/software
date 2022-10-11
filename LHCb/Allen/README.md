@@ -11,7 +11,7 @@ source /cvmfs/lhcb.cern.ch/lib/LbEnv
 - Clone Allen from CERN gitlab
 
 ```bash
-git clone https://gitlab.cern.ch/Allen/Allen.git Allen
+git clone https://gitlab.cern.ch/lhcb/Allen.git Allen
 ```
 
 - Build Allen
@@ -46,7 +46,7 @@ source /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/stable/linux-64/bin/activate
 - Clone Allen from CERN gitlab
 
 ```bash
-git clone https://gitlab.cern.ch/Allen/Allen.git Allen
+git clone https://gitlab.cern.ch/lhcb/Allen.git Allen
 ```
 
 - Build Allen
