@@ -171,3 +171,4 @@ lb-run --nightly lhcb-gauss-dev Gauss/HEAD  gaudirun.py Gauss-Job.py
 - [ LHCb Software Training Twiki](https://twiki.cern.ch/twiki/bin/view/LHCb/LHCbSoftwareTutorials)
 - [Gauss in LHCb Starterkit](https://lhcb.github.io/starterkit-lessons/second-analysis-steps/simulation.html)
 - [SUSY Les Houches Accord calculations and phenomenology](http://skands.physics.monash.edu/slha/)
+- [Contributing to the DecFiles Repository](https://gitlab.cern.ch/lhcb-datapkg/Gen/DecFiles/blob/master/CONTRIBUTING.md)
