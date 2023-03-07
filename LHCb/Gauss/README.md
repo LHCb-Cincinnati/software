@@ -5,10 +5,10 @@ The purpose of this page is to collect some new documentation for important aspe
 
 ## Quick Setup
 
-- Set up Gauss: `lb-dev Gauss/v49r21` 
+- Set up Gauss: `lb-dev Gauss/v56r3` 
 you can decide which version specifying what is after Gauss so it is like `Gauss/<version>`
 
-- cd to the Gauss dir `cd ./GaussDev_v49r21`
+- cd to the Gauss dir `cd ./GaussDev_v56r3`
 
 - We will need the `DecFiles` package which is available on CERN Gitlab (this is where the pre-defined decay is there)
 `git lb-clone-pkg Gen/DecFiles`
@@ -18,12 +18,13 @@ you can decide which version specifying what is after Gauss so it is like `Gauss
 This can be done on one command like 
 
 ```
-lb-dev Gauss/v49r21 \\
-cd ./GaussDev_v49r21 \\ 
+lb-dev Gauss/v56r3 \\
+cd ./GaussDev_v56r3 \\ 
 git lb-clone-pkg Gen/DecFiles \\
+cd Gen/DecFiles
 make 
 ```
-Hint: This will install `Sim09`
+Hint: This will install `Sim10`
 
 ## starterkit Example 
 
