@@ -42,6 +42,6 @@ git checkout -b ${USER}/<event type>
 ```
 Create the gridpacks with
 ```
-source MadgraphData/cmt/gridpack.sh '$APPCONFIGOPTS/Gauss/Beam6500GeV-md100-2016-nu1.6.py' '$LBMADGRAPHROOT/options/70000000.py'
+source MadgraphData/cmt/gridpack.sh '$APPCONFIGOPTS/Gauss/Beam6500GeV-md100-2016-nu1.6.py' '../Gen/DecFiles/options/70000000.py'
 ```
 
