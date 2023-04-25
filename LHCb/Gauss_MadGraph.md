@@ -40,8 +40,8 @@ Next move into the directory and create a new branch for your new event type.
 cd MadgraphData
 git checkout -b ${USER}/<event type>
 ```
-Create the gridpacks with
+Create the gridpacks with the following command, where 70000000.py is your new event number.
 ```
-source MadgraphData/cmt/gridpack.sh '$APPCONFIGOPTS/Gauss/Beam6500GeV-md100-2016-nu1.6.py' '../Gen/DecFiles/options/70000000.py'
+source MadgraphData/cmt/gridpack.sh $APPCONFIGOPTS/Gauss/Beam6500GeV-md100-2016-nu1.6.py ../Gen/DecFiles/options/70000000.py
 ```
 
