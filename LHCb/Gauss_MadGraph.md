@@ -48,3 +48,6 @@ Create the gridpacks with the following command, where 70000000.py is your new e
 source MadgraphData/cmt/gridpack.sh $APPCONFIGOPTS/Gauss/Beam6500GeV-md100-2016-nu1.6.py ../Gen/DecFiles/options/70000000.py
 ```
 
+### Notes
+If you leave/shut down your computer during this process, remember to run `lb-set-platform x86_64_v2-centos7-gcc11-opt` and `./build.${CMTCONFIG}/run bash` in the GaussDev folder before continuing with the process.
+
