@@ -18,10 +18,10 @@ you can decide which version specifying what is after Gauss so it is like `Gauss
 This can be done on one command like 
 
 ```
-lb-dev Gauss/v56r3 \\
-cd ./GaussDev_v56r3 \\ 
+lb-dev Gauss/v56r4 \\
+cd ./GaussDev_v56r4 \\ 
 git lb-clone-pkg Gen/DecFiles \\
-cd Gen/DecFiles
+cd Gen/DecFiles \\
 make 
 ```
 Hint: This will install `Sim10`
