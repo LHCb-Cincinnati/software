@@ -166,6 +166,22 @@ lb-run --nightly lhcb-gauss-dev Gauss/HEAD  gaudirun.py Gauss-Job.py
 ```
 
 
+### Gauss development version from nightly build
+
+To spin out a Gauss development environment based on specific nightly slot, we can use the following 
+
+
+```
+lb-dev --nightly [FLAVOUR/]SLOT[/(DAY|id)] lhcb-gauss-dev Gauss/HEAD
+```
+
+To use the latest nightly slot
+
+```
+lb-dev --nightly lhcb-gauss-dev Gauss/HEAD
+```
+
+
 ## Resources
 
 - [ Simulation in LHCb Twiki ](https://twiki.cern.ch/twiki/bin/view/LHCb/LHCbSimulation)
