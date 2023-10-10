@@ -20,12 +20,12 @@ You can manually connect to `earth` and then hop from there to either `sleepy` o
 - Open VSCode and navigate to the Remote Explorer tab
 You will find two options `tunnles` and `SSH` .
 - Go to SSH and click on `+`  to add new ssh connection
-- In the input field that appears, type `ssh` [`username@`](username@earth.server.address)``[`earth.phy.uc.edu`](earth.phy.uc.edu)``.
+- In the input field that appears, type `ssh username@earth.phy.uc.edu`.
 - You will be connected to `Earth` Server
 
 Since `sleepy`  and `sneezy`  are not publicly accessible on the internet (You will need to be connected to UC network either on campus or UC VPN) , you'll have to set up an SSH tunnel through earth.
 - Open the local terminal.
-   - Write the following command  `ssh -L localhost:2222:` [`sleepy.geop.uc.edu`](sleepy.geop.uc.edu)`:22` [`username@`](username@earth.server.address)``[`earth.phy.uc.edu`](earth.phy.uc.edu)``  You should pick unique port number instead of `2222` which is just example. Don't forget to change username to yours. Also you can change sleepy to sneezy.
+   - Write the following command  `ssh -L localhost:2222: sleepy.geop.uc.edu:22 username@earth.phy.uc.edu`  You should pick unique port number instead of `2222` which is just example. Don't forget to change username to yours. Also you can change sleepy to sneezy.
 - Again, go to Remote Explorer.
 - Click on the `+` button to add a new SSH target.
 - This time, type `ssh username@localhost -p 2222` for `sleepy` .
@@ -120,13 +120,14 @@ You should download the extension after you login in so that it is installed on 
 
 1. **Resource Utilization**: Running Jupyter within VSCode can be less resource-intensive, as you don't need to run a full web server.
 2. **Integrated Environment**: VSCode offers better integration with Git, terminals, and other extensions.
-Extension suggestions: `Python` `IntelliCode` `PDF Viewer` `Pylance` `ROOT File Viewer`
+
+Extension suggestions: [`Python` `IntelliCode` `PDF Viewer` `Pylance` `ROOT File Viewer`].
 3. **Debugging**: Native debugging capabilities are stronger in VSCode. This is extensive and you should look for debugging in VSCode.
 4. **File System Access**: Easier to navigate and manipulate remote files directly. You will navigate them like in your local machine (And copy paste, download and upload doesn't take the life from you as in using `scp` )
 
 ### Usage
 
-1. Open a new .ipynb file or an existing Jupyter notebook file.
+1. Open a new `.ipynb` file or an existing Jupyter notebook file.
 2. The notebook interface should appear.
 3. If not, select the Python interpreter where Jupyter package is installed.
 4. You can now run cells by clicking the "Run Cell" button or using the `Shift + Enter` shortcut.
