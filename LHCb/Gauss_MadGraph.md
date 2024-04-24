@@ -6,7 +6,7 @@ An example decay file is [here](https://gitlab.cern.ch/lhcb-datapkg/Gen/DecFiles
 Try to follow all the conventions of the normal dec files: [link](https://gitlab.cern.ch/lhcb-datapkg/Gen/DecFiles/blob/master/CONTRIBUTING.md).
 
 ### Building Decfiles and Gauss
-Next, we need to build the sim10 version of Gauss.  Follow the directions below, they have only been tested on lxplus.
+Next, we need to build the sim10 version of Gauss.  Follow the directions below, they have only been tested on lxplus.  **Be sure to use lxplus7!  These directions won't work on lxplus8 or lxplus9.**
 
 ```
 lb-set-platform x86_64_v2-centos7-gcc11-opt
