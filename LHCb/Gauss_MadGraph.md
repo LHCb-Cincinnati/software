@@ -42,11 +42,23 @@ git checkout -b ${USER}/<event type>
 cd ..
 ./build.${CMTCONFIG}/run bash
 ```
+### Creating the GridPacks.
 The last command above will fail, but it is necessary.
 Create the gridpacks with the following command, where 70000000.py is your new event number.
 ```
 source MadgraphData/cmt/gridpack.sh $APPCONFIGOPTS/Gauss/Beam6500GeV-md100-2016-nu1.6.py ../Gen/DecFiles/options/70000000.py
 ```
+
+### Testing the DecFile
+The DecFiles themselves can be tested via the normal  method:
+```
+./run bash --norc
+export DECFILESROOT=${PWD}/../Gen/DecFiles
+gaudirun.py $GAUSSOPTS/Gauss-Job.py $GAUSSOPTS/Gauss-2016.py $GAUSSOPTS/GenStandAlone.py $DECFILESROOT/options/70000000.py $LBMADGRAPHROOT/options/MadgraphPythia8.py
+```
+Where 70000000 is your event number.
+
+Be sure to note the CPU time in the output of the last command.  It will need to go in your DecFile before pushing.
 
 ### Notes
 If you leave/shut down your computer during this process, remember to run `lb-set-platform x86_64_v2-centos7-gcc11-opt` and `./build.${CMTCONFIG}/run bash` in the GaussDev folder before continuing with the process.
